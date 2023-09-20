@@ -7,10 +7,10 @@ use crate::snake::{Direction, Snake};
 use crate::draw::{draw_block, draw_rectangle};
 
 const FOOD_COLOR: Color = [0.80, 0.00, 0.00, 1.0]; // Red
-const BORDER_COLOR: Color = [0.00, 0.00, 0.00, 1.0]; // Black
+const BORDER_COLOR: Color = [79.0/255.0, 135.0/255.0, 48.0/255.0, 1.0]; // rgb(79, 135, 48)
 const GAMEOVER_COLOR: Color = [0.90, 0.00, 0.00, 0.5]; // A little transparent and vivid red
 
-const MOVING_PERIOD: f64 = 0.1;
+const MOVING_PERIOD: f64 = 0.1; // Moving speed. Less = faster
 const RESTART_TIME: f64 = 1.0;
 
 pub struct Game {
